@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spense Landing Page</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="Assets/css/index.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <input type="checkbox" id="open" class="menu-checkbox">
+  <header class="header wrapper">
+    <a href="#" class="header__logo">
+      spense.
+    </a>
+    <label for="open" class="menu-open"></label>
+    <nav class="navbar">
+      <ul class="navbar__links">
+        <li class="navbar__item">
+          <a class="link" href="#">Business</a>
+        </li>
+        <li class="navbar__item">
+          <a class="link" href="#">Pricing</a>
+        </li>
+        <li class="navbar__item">
+          <a class="link" href="#">Features</a>
+        </li>
+        <li class="navbar__item">
+          <a class="link" href="#">Login</a>
+        </li>
+        <li class="navbar__item">
+          <a class="link cta" href="#">Get Started</a>
+        </li>
+      </ul>
+    </nav>
+  </header> 
+
+  <!-- HERO -->
+  <section class="hero wrapper">
+    <picture class="hero__image">
+      <source srcset="Assets/images/hero__mobile.png" media="(min-width: 800px)">
+      <!-- <source srcset="Assets/images/hero__desktop.png" media="(min-width: 1000px)"> -->
+      <img class="img__mo" src="Assets/images/hero__mobile2.png" alt="hero mobile" />
+    </picture>
+    <img class="img__desk" src="Assets/images/hero__desktop.png" alt="hero mobile" />
+    <div class="hero__content">
+      <h1 class="hero__title">Share your unfiltered thoughts. Get paid.</h1>
+      <p class="paragraph">Spense is an open patform for individuals to
+        share their unfiltered thoughts. Discuss the topics you love, and get paid for doing just that.
+      </p>
+      <ul class="hero__options">
+        <li class="option">
+          <img src="Assets/svg/Checkmark.svg" alt="chek image">
+          Receive 99% iff the earnings.
+        </li>
+        <li class="option">
+          <img src="Assets/svg/Checkmark.svg" alt="chek image">
+          Get paid via Debit Card,ACH, or Paypal.
+        </li>
+        <li class="option">
+          <img src="Assets/svg/Checkmark.svg" alt="chek image">
+          Withdraw your earnings anytime.
+        </li>
+      </ul>
+      <form class="hero__form">
+        <input type="email" placeholder="jhon@example.com">
+        <button class="cta" type="submit">Get Started</button>
+      </form>
+    </div>
+  </section>  
+
+  <!-- MAIN -->
+  <main class="main ">
+    <!-- brands  -->
+     <div class="brands wrapper">
+
+      <div class="brands-1">
+        <img src="Assets/images/Facebook Logo.png" alt="Facebook logo">
+        <img src="Assets/images/Dribbble Logo.png" alt="Dribbble logo">
+        <img src="Assets/images/Youtube Logo.png" alt="youtube logo">
+      </div>
+
+      <div class="brands-2">
+        <img src="Assets/images/Pinterest Logo.png" alt="Pinterest logo">
+        <img src="Assets/images/Twitter Logo.png" alt="Twitter logo">
+      </div>
+
+      <div class="brands-3">
+        <img src="Assets/images/Reddit Logo.png" alt="Reddit logo">
+        <img src="Assets/images/Google Logo.png" alt="Google logo">
+        <img src="Assets/images/Slack Logo.png" alt="Slack logo">
+      </div>
+    </div> 
+
+    <!-- Secure -->
+    <section class="secure wrapper">
+      <div class="content">
+        <h2 class="subtitle">Secure your money with Escrow.</h2>
+        <p class="paragraph">Spense uses Escrow to secure all payments.
+          We believe Escrow offers the highest level of security for your
+          payments, so you never need to worry about scams.
+        </p>
+        <a href="#" class="cta-m">
+          Learn more about Escrow
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+
+      <picture class="secure__image">
+        <source srcset="Assets/images/phone_tablet.png"
+                media="(min-width: 800px)">
+        <img src="Assets/images/phone_mobile.png" alt="secure phone mobile" />
+      </picture>
+      <div class="img__desk-phone"></div>
+
+      
+    </section> 
+
+    <!-- Text Editor -->
+    <section class="editor wrapper">
+      <div class="content">
+        <h2 class="subtitle">A text editor like no other.</h2>
+        <p class="paragraph">Our text editor pulls you into focues mode with it's
+          simplictic design and usability so you can put out 
+          your best writings.
+        </p>
+        <a href="#" class="cta-m">
+          Text Editor Live Demo
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+      <figure class="editor__img">
+        <img src="Assets/images/Text Editor.png" alt="Text editor image">
+      </figure>
+    </section>  
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <a href="#" class="footer__logo">spense.</a>
+      <p class="paragraph-m">Spense is an open platform for individuals to
+        shared their unfiltered thoughts. Discuss the topics you love and 
+        get paid for doing just that.
+      </p>
+    </div>
+
+    <nav class="footer__nav">
+      <ul class="footer__links">
+        <h3>Company</h3> 
+        <li class="item">
+          <a class="link" href="#">About</a>
+        </li>
+        <li class="item">
+          <a class="link" href="#">Customers</a>
+        </li>
+        <li class="item">
+          <a class="link" href="#">Blog</a>
+        </li>
+      </ul>
+      <ul class="footer__links">
+        <h3>Opportunities</h3>  
+        <li class="item">
+          <a class="link" href="#">Jobs</a>
+        </li>
+      </ul>
+      <ul class="footer__links">
+        <h3>Sitemap</h3> 
+        <li class="item">
+          <a class="link" href="#">Homepage</a>
+        </li>
+      </ul>
+      <ul class="footer__links">
+        <h3>Resources</h3> 
+        <li class="item">
+          <a class="link" href="#">Support</a>
+        </li>
+        <li class="item">
+          <a class="link" href="#">Contact</a>
+        </li>
+        <li class="item">
+          <a class="link" href="#">Faq</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="me">
+      <p>Coded by <a href="#">Cesar Zubilete</a></p>
+    </div>
+  </footer> 
+</body>
+</html>

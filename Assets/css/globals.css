@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+@import url(header.css);
+@import url(menu.css);
+@import url(hero.css);
+@import url(brands.css);
+@import url(secure.css);
+@import url(editor.css);
+@import url(footer.css);
+:root{
+  --colorPrimary:rgba(240,238,235,255);
+  --colorText:rgba(102,97,82,255);
+  --footerText:rgba(147,147,143,255);
+  --colorHeadings:rgba(40,40,41,255);
+  --bgCta:rgba(1,1,0,255);
+  --colorCta:rgba(92,88,73,255);
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family:'Open Sans', sans-serif;;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 1.48rem;
+  background-color: var(--colorPrimary);
+  color: var(--colorText);
+}
+.wrapper{
+  width: calc(100% - 10%);
+  margin-inline: auto;
+  max-width: 140rem;
+}
+.cta{
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--bgCta);
+  color: white;
+  cursor: pointer;
+}
+.cta:hover{
+  opacity: 0.8;
+}
+.cta-m{
+  color: var(--colorText);
+  font-weight: 700;
+  transition: letter-spacing .2s ease;
+}
+.cta-m:hover{
+  letter-spacing: 1px;
+}
+/* MAIN */
+.main{
+  background-color: white;
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.subtitle{
+  font-weight: 700;
+  font-size: 2.85rem;
+  color: var(--colorHeadings);
+  max-width: 70%;
+}
+
+@media screen and (min-width:800px) {
+  .content{
+    max-width: 50rem;
+  }
+}
+@media screen and (min-width:1200px) {
+  .content{
+    max-width: 60rem;
+  }
+  .subtitle{
+    font-size: 3.5rem;
+  }
+}

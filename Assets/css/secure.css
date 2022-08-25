@@ -1,0 +1,49 @@
+.secure{
+  padding-block-start: 4rem;
+  padding-inline: 3rem;
+  background-color: var(--colorPrimary);
+  border-radius: 1rem;
+}
+.secure__image{
+  width: 100%;
+}
+
+.secure__image img{
+  display: block;
+  width: 100%;
+}
+.img__desk-phone{
+  display: none;
+}
+@media screen and (min-width:800px) {
+  .secure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+  }
+  .secure__image img{
+    display: block;
+    margin-inline: auto;
+    width: 80%;
+  }
+}
+@media screen and (min-width:1200px) {
+  .secure{
+    flex-direction: row;
+  }
+  .secure__image {
+    display: none;
+  }
+  
+  .img__desk-phone{
+    display: inline-block;
+    background-image: url('../images/phone_desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right 10%;
+    width: 100%;
+    height: 400px;
+  }
+  
+}
